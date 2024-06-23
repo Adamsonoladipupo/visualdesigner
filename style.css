@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    :root{
+        --pryColor: #0a2635; 
+    }
+
+    body {
+        font-family: "Montserrat", sans-serif;
+        color: var(--pryColor);
+    }
+    nav {
+    /* background: var(--pryColor); */
+    color: var(--pryColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px;
+    }
+    nav .mainMenu {
+        display: flex;
+        list-style: none;
+    }
+    nav .mainMenu li a {
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--pryColor);
+        font-size: 15px;
+        transition: 1.5s ease;
+    }
+    nav .mainMenu li a:hover {
+        border-bottom: 1px solid var(--pryColor);
+    }
+    nav .openMenu {
+        font-size: 1.3rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+    }
+    nav .mainMenu .closeMenu,
+    .icons i {
+        font-size: 1.3rem;
+        display: none;
+        cursor: pointer;
+    }
+    .fa-twitter:hover {
+        color: rgb(0, 110, 255);
+    }
+    .fa-instagram:hover {
+        color: rgb(255, 0, 191);
+    }
+    nav .logo {
+        margin: 20px;
+        cursor: pointer;
+        /* text-transform: uppercase; */
+    }
+    .section{
+            margin: 10px 60px 0px 60px;
+            
+        }
+    .introduction h1{
+        padding-bottom: 20px;
+    }
+    button{
+        border: none;
+    }
+    .myButton{
+        background-color: var(--pryColor);
+        color: #fff;
+        padding: 10px 30px;
+        margin: 15px 0px;
+        font-size: 15px;
+        border-radius: 20px;
+        
+    }
+    .introduction a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .works{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center ;
+        gap: 5px;
+    }
+    .workcard{
+        width: 32%;
+        height: auto;
+        margin-bottom: inherit ;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+    }
+    .workcard img{
+        width: 100%;
+    }
+    .workcard:hover{
+        color: #000;
+    }
+    .caption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* text-transform: uppercase; */
+        letter-spacing: 1px;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:baseline ;
+        justify-content:end ;
+        color: #fff;
+        opacity: 0;
+        transition: all 0.5s ease;
+
+    }
+    .caption h2{
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0px 20px 10px 20px;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+    }
+    .caption p{
+        margin: 0px 20px 20px 20px;
+    }
+    .workcard:hover .caption{
+        opacity: 1;
+        background-color: #00000094;
+    }
+    .footer{
+        margin: 60px;
+    }
+    .footerIcon{
+        font-size: 1.3rem;
+        cursor: pointer;
+        
+    }
+    .fab{
+        padding-right: 20px;
+        margin-bottom: 15px;
+    }
+    @media (max-width: 800px) {
+        nav{
+            margin: 5px;
+            
+        }
+        nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--pryColor);
+        transition: top 1s ease 0s;
+        display: none;
+        color: #fff;
+        }
+        nav .mainMenu li a{
+            color: #fff;
+        }
+        nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        }
+        nav .openMenu {
+        display: block;
+        }
+        nav .mainMenu li a:hover {
+        border-bottom: 1px solid var(--pryColor);
+        }
+        .section{
+            margin: 10px 20px 20px 20px;
+        }
+        .icons i {
+        margin-top: 20px;
+        display: inline-block;
+        padding: 15px;
+        }
+        .workcard{
+        width: 48.5%;
+        height: auto;
+        margin-bottom: 10px ;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        }
+        .workcard img{
+            width: 100%;
+        }
+        
+    }
+    @media (max-width: 500px){
+        .section{
+            margin: 10px 20px 20px 20px;
+        }
+        .workcard{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        }
+        .workcard img{
+            width: 100%;
+        }
+    }
