@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Olaadams</title>
+
+    
+</head>
+<body>
+    <nav> 
+        <div class="logo">
+            <a href="index.html"><img src="image/logo.svg" alt="" width="50px"></a>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Archive</a></li>
+            <li><a href="#">An Advocate</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-behance"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+        </ul>
+    </nav>
+    <div class="section introduction">
+        <h1>hello! i'm a product & brand designer crafting meaningful identities, systems and experiences.</h1>
+        <p>Currently @ Gosub — Previously @ Rhetorex Communication, The Jakpa Diary</p>
+        <button class="myButton"><a href="about.html" >Let's Connect</a></button>
+        
+    </div>
+    <section class=" section works">
+        <a href="#" class="workcard">
+            <img src="image/work1.png" alt="">
+            <div class="caption">
+                <h2>CorelDraw</h2>
+                <p>Brand design, Visual Design & Web design</p>
+            </div>
+        </a>
+
+        <a href="#" class="workcard">
+            <img src="image/work1.png" alt="">
+            <div class="caption">
+                <h2>CorelDraw</h2>
+                <p>Brand design, Visual Design & Web design</p>
+            </div>
+        </a>
+
+        <a href="#" class="workcard">
+            <img src="image/work1.png" alt="">
+            <div class="caption">
+                <h2>CorelDraw</h2>
+                <p>Brand design, Visual Design & Web design</p>
+            </div>
+        </a>
+
+        <a href="#" class="workcard">
+            <img src="image/work1.png" alt="">
+            <div class="caption">
+                <h2>CorelDraw</h2>
+                <p>Brand design, Visual Design & Web design</p>
+            </div>
+        </a>
+
+        <a href="#" class="workcard">
+            <img src="image/work1.png" alt="">
+            <div class="caption">
+                <h2>CorelDraw</h2>
+                <p>Brand design, Visual Design & Web design</p>
+            </div>
+        </a>
+
+        <a href="#" class="workcard">
+            <img src="image/work1.png" alt="">
+            <div class="caption">
+                <h2>CorelDraw</h2>
+                <p>Brand design, Visual Design & Web design</p>
+            </div>
+        </a>
+        
+        
+    </section>
+
+    <footer class="section footer">
+        <div class="">
+            <span class="footerIcon">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-behance"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+        </div>
+        <p>© 2024 OLA ADAMS DESIGN</p>
+    </footer>
+    
+
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%';
+}
+
+    </script>
+</body>
+</html>
