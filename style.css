@@ -5,7 +5,9 @@
     }
 
     :root{
-        --pryColor: #0a2635; 
+        --pryColor: #0a2635;
+        --pryColor2: #123547;
+        
     }
 
     body {
@@ -13,7 +15,6 @@
         color: var(--pryColor);
     }
     nav {
-    /* background: var(--pryColor); */
     color: var(--pryColor);
     display: flex;
     align-items: center;
@@ -78,6 +79,9 @@
         border-radius: 20px;
         
     }
+    .myButton:hover{
+        background-color: var(--pryColor2);
+    }
     .introduction a{
         color: #fff;
         text-decoration: none;
@@ -90,12 +94,12 @@
         gap: 5px;
     }
     .workcard{
-        width: 32%;
+        width: 33%;
         height: auto;
         margin-bottom: inherit ;
         overflow: hidden;
         position: relative;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     .workcard img{
         width: 100%;
@@ -166,7 +170,7 @@
             
         }
         nav .mainMenu {
-        height: 95vh;
+        height: 99vh;
         position: fixed;
         top: 0px;
         right: 0px;
