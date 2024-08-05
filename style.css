@@ -166,7 +166,7 @@
             
         }
         nav .mainMenu {
-        height: 100vh;
+        height: 90vh;
         position: fixed;
         top: 0px;
         right: 0px;
@@ -186,7 +186,7 @@
         nav .mainMenu .closeMenu {
         display: block;
         position: absolute;
-        top: 30px;
+        top: 3px;
         right: 30px;
         }
         nav .openMenu {
@@ -199,7 +199,7 @@
             margin: 10px 20px 20px 20px;
         }
         .icons i {
-        margin-top: 20px;
+        margin-top: 2px;
         display: inline-block;
         padding: 15px;
         }
