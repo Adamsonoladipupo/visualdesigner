@@ -6,6 +6,7 @@
 
     :root{
         --pryColor: #0a2635;
+        --secColor: #00a5fd;
         --pryColor2: #123547;
         
     }
@@ -165,19 +166,41 @@
         width: 350px;
         height: auto;
         border-radius: 100%;
-        margin: 20px;
+        /* margin: 20px; */
     }
     .aboutMe div:nth-child(2){
         padding: 0px 60px;
     }
     hr{
         border: 1px solid #eeeeee;
-        margin: 50px;
+        margin: 30px;
     }
     .ExpEduSkls{
         margin: 0px 20px;
         display: flex;
         justify-content: space-around;
+    }
+    .ExpEduSkls h3{
+        padding-bottom: 5px;
+    }
+    .experience p:nth-child(3){
+        padding-top: 15px;
+    }
+    .education p:nth-child(3){
+        padding-top: 15px;
+    }
+    .skills p:nth-child(3){
+        padding-top: 15px;
+    }
+    .tools p:nth-child(3){
+        padding-top: 15px;
+    }
+    .ExpEduSkls span{
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color:var(--secColor);
+        margin: 5px 0px;
     }
 
     /* ---------------------------------------------------------------
@@ -260,7 +283,7 @@
     .authorImage img{
         width: 100%;
         border-radius: 100%;
-        margin: 20px;
+        margin-bottom: 20px;
         text-align: center;
     }
     .aboutMe div:nth-child(2){
