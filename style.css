@@ -202,7 +202,56 @@
         background-color:var(--secColor);
         margin: 5px 0px;
     }
+    .DesignValueMain{
+        background-color: var(--pryColor);
+        margin-top: 3%;
+        padding: 25px 60px 30px 60px;
+    }
+    .DesignValueMain hr{
+        border-bottom: 1px solid var(--secColor) ;
+        border-top: 1px solid var(--pryColor) ;
+        border-left: 1px solid var(--pryColor) ;
+        border-right: 1px solid var(--pryColor) ;
+        fill: var(--pryColor);
+        margin: 30px 0px;
+    }
+    .DesignValueMain p:nth-child(1){
+        color: #bebebe;
+    }
+    .DesignValueMain h3{
+        color: white;
+    }
+    .designValue{
+        background-color: var(--pryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .designValue div{
+        background-color: var(--secColor);
+        border-radius: 5px;
+        padding: 30px;
+        margin: 10px 0px 0px 0px;
+    }
+    .designValue h4{
+        margin: 10px 0px;
+    }
+    .letsConnect{
+        display: flex;
+        align-items: center;
+        padding: 20px 30px 20px 60px;
+        gap: 20px;
+        border: 1px solid var(--pryColor);
+        margin-top: 20px;
 
+    }
+    .letsConnect div{
+        padding: 10px 30px;
+        background-color: var(--pryColor);
+        color: #fff;
+        border-radius: 60px;
+    }
     /* ---------------------------------------------------------------
     -------------------  CSS for the work pages  ------------------
     --------------------------------------------------------------- */
@@ -383,7 +432,36 @@
         display: block;
         justify-content: start ;
     }
+    .DesignValueMain{
+        padding: 25px 20px 20px 20px;
+    }
+    .designValue{
+        background-color: var(--pryColor);
+        display: grid;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+    }
+    .designValue div{
+        padding: 20px;
+        margin: 5px 0px 0px 0px;
+    }
+    .letsConnect{
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px 20px 10px 20px;
+        gap: 5px;
+        border: 1px solid var(--pryColor);
+        margin-top: 20px;
 
+    }
+    .letsConnect div{
+        padding: 10px 30px;
+        background-color: var(--pryColor);
+        color: #fff;
+        border-radius: 60px;
+    }
 
 
     }
