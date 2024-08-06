@@ -7,9 +7,52 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
-    <title>Olaadams</title>
+    <style>
+        #protected-content {
+            display: none;
+        }
+        #password-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        #password-popup button{
+            background-color: #00a5fd;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+        }
+        #password-popup input{
+            background-color: #fff;
+            padding: 5px 10px;
+            border: 1px solid #00a5fd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.856);
+            z-index: 999;
+        }
+    </style>
+
+    <title>Abdulwahb Adamson</title>
 
     
 </head>
@@ -22,18 +65,30 @@
         <ul class="mainMenu">
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">An Advocate</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="resume.pdf" download="Abdulwahab Adamson.pdf">Resume</a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <span class="icons">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
                 <i class="fab fa-linkedin-in"></i>
                 <i class="fab fa-behance"></i>
                 <i class="fa-solid fa-envelope"></i>
             </span>
         </ul>
     </nav>
+
+
+
+    <div id="overlay"></div>
+
+    <div id="password-popup">
+        <h2>Protected Content</h2>
+        <p>Please contact the author</p>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    
+
     <div class=" project Gosub">
         <div class="ProjectDP">
             <h1>Gosub Limited Re-branding</h1>
@@ -41,7 +96,8 @@
             <img src="Work/Gosub/Design 11 H.png" alt="">
         </div>
     </div>
-    <div class="designProcess ">
+    <div id="protected-content">
+            <div class="designProcess ">
         <div class="designOverview">
             <p>Design Highlights</p>
             <h3>Design challenge and responsibilities overview</h3>
@@ -187,47 +243,47 @@
         </div>
 
     </div>
+    </div>
+
     
     <div>
         <h4 class="section" style="margin-bottom: 40px; margin-top: 100px;">More Projects while you are here</h4>
-    <section class="section works">
-        <a href="gosub.html" class="workcard">
-            <img src="Work/Gosub/flyer 1A by AdamsonOladipupo.png" alt="">
-            <div class="caption">
-                <h2>Gosub Limited</h2>
-                <p>Brand design, Visual Design & Web design</p>
-            </div>
-        </a>
+        <section class="section works">
+            <a href="foodapp.html" class="workcard">
+                <img src="Work/Food app/Food app.png" alt="">
+                <div class="caption">
+                    <h2>Food App</h2>
+                    <p>Brand design, Visual Design & Web design</p>
+                </div>
+            </a>
 
-        <a href="#" class="workcard">
-            <img src="Work/AB GLowSpark/AB glowspark business card.png" alt="">
-            <div class="caption">
-                <h2>AB GlowSpark</h2>
-                <p>Brand design, Visual Design & Web design</p>
-            </div>
-        </a>
+            <a href="knead.html" class="workcard">
+                <img src="Work/Knead Token/knead DP 1.png" alt="">
+                <div class="caption">
+                    <h2>Knead Token</h2>
+                    <p>Brand design, Visual Design & Web design</p>
+                </div>
+            </a>
 
-        <a href="#" class="workcard">
-            <img src="Work/Knead Token/knead DP 1.png" alt="">
-            <div class="caption">
-                <h2>Knead Token</h2>
-                <p>Brand design, Visual Design & Web design</p>
-            </div>
-        </a>
-    </section>
+            <a href="algoasset.html" class="workcard">
+                <img src="Work/Algoassets/Algoassets.png" alt="">
+                <div class="caption">
+                    <h2>Algoassets</h2>
+                    <p>Brand design, Visual Design & Web design</p>
+                </div>
+            </a>
+        </section>
     </div>
 
     <footer class="section footer">
         <div class="">
             <span class="footerIcon">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
                 <i class="fab fa-linkedin-in"></i>
                 <i class="fab fa-behance"></i>
                 <i class="fa-solid fa-envelope"></i>
             </span>
         </div>
-        <p>© 2024 OLA ADAMS DESIGN</p>
+        <p>© 2024 ABDULWAHAB ADAMSON O.</p>
     </footer>
     
 
@@ -258,6 +314,28 @@ function close(){
     mainMenu.style.top = '-100%';
 }
 
+    </script>
+
+    <!-- Script for controlling password -->
+    <script>
+        var correctPassword = "password"; // Replace with your desired password
+    
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            if (password === correctPassword) {
+                document.getElementById('protected-content').style.display = 'block';
+                document.getElementById('password-popup').style.display = 'none';
+                document.getElementById('overlay').style.display = 'none';
+            } else {
+                alert('Incorrect password');
+            }
+        }
+    
+        // Show the password popup when the page loads
+        window.onload = function() {
+            document.getElementById('password-popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        };
     </script>
 </body>
 </html>
