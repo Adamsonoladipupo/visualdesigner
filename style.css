@@ -22,7 +22,13 @@
     justify-content: space-between;
     margin: 60px;
     }
-
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    img{
+        border-radius: 5px;
+    }
     nav .mainMenu {
         display: flex;
         list-style: none;
@@ -323,10 +329,39 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        gap: 10px;
+        
+    }
+    .designOverview2 img{
+        width: 70%;
+        text-align: center; 
+        border-radius: 5px;
+
+    }
+    /* Styling algoassets page */
+    .painPoint{
+        background-color: var(--pryColor2);
+        padding: 20px;
+        border-radius: 5px;
+        margin: 5px;
     }
 
+    /* -----------------------------------------------------------------------
+    -----------------  styling algoassets page ----------------------------
+    ----------------------------------------------------------------------- */
+    .imageOnMobile img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .textBorder{
+        padding: 20px; 
+        border:1px solid #00a5fd;
+    }
 
     @media (max-width: 800px) {
+        body{
+            font-size: 80%;
+        }
         nav{
             margin: 5px;
             
@@ -405,6 +440,7 @@
             display: grid;
             justify-content: start;
             align-items: center;
+            gap: 5px;
         }
         .designOverview{
             padding: 40px;
@@ -462,6 +498,29 @@
         color: #fff;
         border-radius: 60px;
     }
+
+
+    /* ---------------------------------------------------------------
+-------------------  CSS for the algoassets page  ------------------
+--------------------------------------------------------------- */
+    .painPoint{
+        background-color: var(--pryColor2);
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .textBorder{
+        padding: 10px; 
+    }
+
+
+    .imageOnMobile img{
+        width: 100%;
+    }
+    .designOverview2 img{
+        width: 100%;
+    }
+
 
 
     }
