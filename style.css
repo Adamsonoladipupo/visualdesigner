@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 60px;
+    margin: 60px 0px 60px 60px;
     }
     a{
         text-decoration: none;
@@ -399,7 +399,7 @@
         .section{
             margin: 10px 20px 20px 20px;
         }
-        .icons i {
+        .icons {
         margin-top: 2px;
         display: inline-block;
         padding: 15px;
