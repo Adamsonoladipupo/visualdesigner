@@ -349,6 +349,8 @@
     /* -----------------------------------------------------------------------
     -----------------  styling algoassets page ----------------------------
     ----------------------------------------------------------------------- */
+
+
     .imageOnMobile img{
         width: 100%;
         border-radius: 5px;
@@ -357,6 +359,22 @@
         padding: 20px; 
         border:1px solid #00a5fd;
     }
+
+
+    /* -----------------------------------------------------------------------
+    -----------------  styling algoassets page ----------------------------
+    ----------------------------------------------------------------------- */
+    .clietsTestimony{
+        background-color: #ebebeb;
+        padding: 5% 10% 5% 10%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+
 
     @media (max-width: 800px) {
         body{
